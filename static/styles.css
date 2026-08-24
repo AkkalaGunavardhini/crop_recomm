@@ -7,7 +7,13 @@ body {
 }
 
 .color{
-    -webkit-text-fill-color: #4caf50;
+    -webkit-text-fill-color: #f8f9fa;
+    font-size: 35px;
+}
+
+.color1{
+    -webkit-text-fill-color: #4CAF50;
+    font-size: 35px;
 }
 
 .container {
@@ -98,6 +104,7 @@ body {
 
 .hh {
     font-size: 45px;
+    text-shadow: #4CAF50;
     margin-bottom: 20px;
     -webkit-text-fill-color: #f8f9fa;
     animation-name: example;
@@ -126,15 +133,52 @@ body {
     text-align: center;
     -webkit-text-fill-color: #f8f9fa;
   }
+  .crop-container {
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; /* Allow wrapping of items to the next line if space is insufficient */
+    gap: 30px; /* Space between the crops */
+    text-align: center; /* Center the text within each crop item */
+    width: 100%; /* Ensures container takes full width of parent */
+}
+
+
+.cardr {
+    padding: 20px;
+    border: 2px ;
+    border-radius: 10px;
+    background-color:  #ffffff43;
+    margin: 20px;
+}
+
+.form-groupr {
+    text-align: center;
+}
+
+.crop-item {
+    display: flex;
+    flex-direction: column; /* Ensure each crop item is aligned vertically within itself */
+    align-items: center; /* Centers image and text within each crop item */
+    max-width: 200px; /* Limits the width of each crop */
+}
+
+.crop-item img {
+    width: 100%; /* Make images scale according to the container width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
 
 p{
     font-size: 20px;
 }
 
+
 h3 {
     font-size: 25px;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     animation-direction: alternate;
