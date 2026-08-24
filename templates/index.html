@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crop Prediction</title>
+    <title>HarvestMate</title>
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
 </head>
 <body>
     <div class="card">
-        <h1 class="color">Crop Prediction</h1>
+        <h1 class="color1">Input Your Details </h1><br>
         <form action="/predict" method="post">
             <div class="form-group">
-                <label for="N">Nitrogen:</label>
+                <label for="N">Nitrogen(0 - 150):</label>
                 <input type="text" id="N" name="N" required><br><br>
             </div>
             <div class="form-group">
-                <label for="P">Phosphorous:</label>
+                <label for="P">Phosphorous(0 - 150):</label>
                 <input type="text" id="P" name="P" required><br><br>
             </div>
             <div class="form-group">
-                <label for="K">Potassium:</label>
+                <label for="K">Potassium(0 - 210):</label>
                 <input type="text" id="K" name="K" required><br><br>
             </div>
             <div class="form-group">
-                <label for="temperature">Temperature:</label>
+                <label for="temperature">Temperature(15 - 45):</label>
                 <input type="text" id="temperature" name="temperature" required><br><br>
             </div>
             <div class="form-group">
-                <label for="humidity">Humidity:</label>
+                <label for="humidity">Humidity(10 - 100):</label>
                 <input type="text" id="humidity" name="humidity" required><br><br>
             </div>
             <div class="form-group">
-                <label for="ph">PH:</label>
+                <label for="ph">PH Value(0 - 7.5):</label>
                 <input type="text" id="ph" name="ph" required><br><br>
             </div>
             <div class="form-group">
-                <label for="rainfall">Rainfall:</label>
+                <label for="rainfall">Rainfall(20 - 290):</label>
                 <input type="text" id="rainfall" name="rainfall" required><br><br>
             </div>
             <div class="form-group" >
