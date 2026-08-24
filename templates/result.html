@@ -7,10 +7,18 @@
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
 </head>
 <body class="container1">
-    <div class="card1">
-        <h1  class="color">Predicted Crop:</h1>
-        <h3>{{ predicted_crop }}</h3><br>
-        <div class="form-group">
+    <div class="cardr">
+        <h1 class="color1">Predicted Crops:</h1>
+        <div class="crop-container">
+            {% for crop in top_n_crops %}
+                <div class="crop-item">
+                    <h3>{{ crop }}</h3>
+                    <img src="/static/crop_images/{{ crop }}.jpg" 
+                         alt="{{ crop }} image">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="form-groupr">
             <form action="/index" method="get">
                 <button id="start-button">Back</button>
             </form><br>
